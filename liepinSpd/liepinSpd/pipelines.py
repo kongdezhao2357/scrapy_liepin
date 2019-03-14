@@ -65,7 +65,7 @@ class LiepinspdPipeline(object):
 
     def __init__(self):
         # 建立连接
-        self.conn = pymysql.connect('rm-2zewagytttzk6f24xno.mysql.rds.aliyuncs.com', 'cn_ainvest_db', 'cn_ainvest_sd3a1', 'special_data')  # 有中文要存入数据库的话要加charset='utf8'
+        self.conn = pymysql.connect(...)
         # 创建游标
         self.cursor = self.conn.cursor()
 
